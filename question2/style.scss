@@ -1,0 +1,49 @@
+body {
+  background-color: #e6e4ea;
+  margin: 3rem 5rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  .listContainer{
+    margin: auto;
+    background: white;
+    height: 50wh;
+    height: 300px;
+    width: 70%;
+    border-radius: 4px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-top: 2rem;;
+  }
+  ul li{
+      list-style: none;
+      margin-bottom: 1rem;
+  }
+  .buttonContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  button{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    /* margin: auto; */
+    /* margin: 4px auto; */
+    background: none;
+    border-radius: 50%;
+    /* padding: 10px; */
+    border: 1px solid #52acc8;
+    color: #52acc8;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .disabled{
+    border: 1px solid gray;
+    color: gray;
+  }
+}

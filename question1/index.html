@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form" onsubmit="addNewTodo(event);">
+        <input type="text" id="title" name="title" placeholder="Todo title" required>
+        <input type="text" id="description" name="description" placeholder="description" required>
+        <input type="date" id="date" name="date" placeholder="mm/dd/yy" required>
+        <button type="submit" value="Submit" onclick="addNewTodo">submit</button>
+    </form>
+    <div class="todosContainer">
+        <div id="todo" class="cardContainer">
+            <p class="title">Tasks</p>
+        </div>
+        <div id="inProgress" class="cardContainer">
+            <p class="title">In progress</p>
+
+        </div>
+        <div id="done" class="cardContainer">
+            <p class="title">Done</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

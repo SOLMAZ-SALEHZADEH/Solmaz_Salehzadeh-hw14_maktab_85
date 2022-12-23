@@ -1,0 +1,139 @@
+body {
+  padding: 3rem 2rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 0.5fr;
+      grid-template-columns: 1fr 1fr 1fr 0.5fr;
+  gap: 0.5rem;
+}
+
+form input {
+  border: 1px solid #a4a1a1;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+form button {
+  background-color: #14a114;
+  border: 1px solid #14a114;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.todosContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.todosContainer .cardContainer {
+  border-radius: 4px;
+  border: none;
+  padding: 1rem;
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  row-gap: 1rem;
+}
+
+.todosContainer .cardContainer .title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.todosContainer .card {
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 0.5rem;
+}
+
+.todosContainer .card .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.todosContainer .card .header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.todosContainer .card .header .close {
+  color: red;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.todosContainer .card p {
+  margin-bottom: 0.5rem;
+}
+
+.todosContainer .card span {
+  color: #969595;
+  font-size: 0.8rem;
+}
+
+.todosContainer .card .buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.todosContainer .card .buttonContainer button {
+  background-color: powderblue;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: black;
+  border: none;
+}
+
+.todosContainer .card .buttonContainer select {
+  background-color: powderblue;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  color: black;
+  border: none;
+}
+
+.todosContainer #todo {
+  background-color: powderblue;
+}
+
+.todosContainer #inProgress {
+  background-color: palegoldenrod;
+}
+
+.todosContainer #done {
+  background-color: palegreen;
+}
+/*# sourceMappingURL=style.css.map */
